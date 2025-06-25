@@ -1,6 +1,6 @@
 import java.util.Stack;
 
- class MatchParentheses {
+class MatchParentheses {
     public static void main(String[] args) {
         String expression = "((a+b)*[c/d])";
         boolean result = isBalanced(expression);
@@ -29,5 +29,5 @@ import java.util.Stack;
 }
 
 
-OUTPUT:Expression: ((a+b)*[c/d])
-Balanced: true
+//OUTPUT:Expression: ((a+b)*[c/d])
+//Balanced: true
