@@ -1,0 +1,40 @@
+import java.util.Stack;
+
+ class ReverseArrayWithStack {
+    public static void main(String[] args) {
+        int[] arr = {15, 25, 35, 45, 55};
+
+        System.out.print("Original Array: ");
+        printArray(arr);
+
+        reverseArray(arr);
+
+        System.out.print("Reversed Array: ");
+        printArray(arr);
+    }
+
+    public static void reverseArray(int[] arr) {
+        Stack<Integer> stack = new Stack<>();
+
+        // Push elements to stack
+        for (int num : arr) {
+            stack.push(num);
+        }
+
+        // Pop elements back into array (reversed)
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = stack.pop();
+        }
+    }
+
+    public static void printArray(int[] arr) {
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+
+OUTPUT:
+Original Array: 15 25 35 45 55 
+Reversed Array: 55 45 35 25 15
