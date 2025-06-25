@@ -1,0 +1,23 @@
+class RecursiveArraySum {
+    public static void main(String[] args) {
+        int[] arr = {10, 15, 25, 20};  // Define the array
+        int sum = recursiveSum(arr, 0);  // Start summing from index 0
+
+        System.out.print("Array: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+
+        System.out.println("\nSum of elements: " + sum);
+    }
+
+    // Recursive function to calculate the sum
+    public static int recursiveSum(int[] arr, int index) {
+        if (index >= arr.length) return 0;  // Base case: end of array
+        return arr[index] + recursiveSum(arr, index + 1);  // Recursive step
+    }
+}
+
+
+// Array: 10 15 25 20 
+// Sum of elements: 70
