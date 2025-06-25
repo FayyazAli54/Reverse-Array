@@ -18,6 +18,6 @@ class RecursiveArraySum {
     }
 }
 
-
+OUTPUT:
 // Array: 10 15 25 20 
 // Sum of elements: 70
